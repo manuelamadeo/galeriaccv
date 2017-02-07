@@ -1,0 +1,112 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/app-layout/app-toolbar/app-toolbar.html">
+<link rel="import" href="../../bower_components/paper-toggle-button/paper-toggle-button.html">
+<link rel="import" href="../../bower_components/platinum-push-messaging/platinum-push-messaging.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<dom-module id="polynotifs-app">
+  <template>
+    <style>
+      :host {
+        display: block;
+        --app-primary-color: #4CAF50;
+        --app-secondary-color: #795548;
+        font-family: 'trebuchet ms', arial, verdana, sans-serif;
+      }
+      
+      app-toolbar{
+        background-color: var(--app-primary-color);
+        color: #fff;
+      }
+      paper-toggle-button{
+        font-size: .8em;
+        --paper-toggle-button-label-color: #fff;
+        --paper-toggle-button-checked-bar-color:  var(--paper-yellow-500);
+        --paper-toggle-button-checked-button-color:  var(--paper-yellow-600);
+        --paper-toggle-button-unchecked-button-color:  var(--paper-grey-200);
+      }
+      pre{
+        overflow: auto; 
+        margin: 5px;
+        padding: 15px;
+        background-color: #ddd;
+      }
+      paper-material{
+        margin: 15px 0;
+        padding: 15px;
+      }
+      p{
+        font-size: .8em;
+      }
+    </style>
+
+    <platinum-push-messaging
+      id="notificationElement"
+      title="Te ha llegado una notificación"
+      message="Este es el mensaje, que debería poder personalizarse"
+      enabled="{{notificationsEnabled}}"
+    ></platinum-push-messaging>
+    
+    <app-toolbar>
+      <div main-title>Polynotif</div>
+      <paper-toggle-button 
+        id="toggle"
+        checked="[[notificationsEnabled]]"
+      >¿Aceptar Notificaciones?</paper-toggle-button>
+    </app-toolbar>
+
+    <paper-material>
+      <div hidden="[[!subscriptionId]]">
+        <pre class="paper-font-code1">curl https://android.googleapis.com/gcm/send -d "registration_id=[[subscriptionId]]" --header "Authorization: key=[tu-key]"</pre>
+      </div>
+      <p>[[subscriptionId]]</p>
+    </paper-material>
+  </template>
+
+  <script>
+    'use strict'
+
+    Polymer({
+
+      is: 'polynotifs-app',
+
+      properties: {
+        subscriptionId: {
+          type: String
+        },
+        notificationsEnabled: {
+          type: Boolean,
+          value: false
+        }
+      },
+
+      listeners: {
+        'toggle.change': 'toggleNotifications',
+        'notificationElement.subscription-changed': 'subscriptionChanged'
+      },
+
+      ready: function() {
+        console.log(this.$.notificationElement.supported)
+        this.$.toggle.disabled = !this.$.notificationElement.supported;
+      },
+
+      toggleNotifications: function() {
+        if(this.$.toggle.checked) {
+          this.$.notificationElement.enable();
+        } else {
+          this.$.notificationElement.disable();          
+        }
+      },
+
+      subscriptionChanged: function() {
+        console.log('subscription changed', this.$.notificationElement.subscription);
+        
+        this.subscriptionId = this.$.notificationElement.subscription ? this.$.notificationElement.subscription.subscriptionId : undefined;
+        if (this.$.notificationElement.subscription && !this.$.notificationElement.subscription.subscriptionId) {
+          var endpointSections = this.$.notificationElement.subscription.endpoint.split('/');
+          this.subscriptionId = endpointSections[endpointSections.length - 1];
+        }
+      }
+
+    });
+  </script>
+</dom-module>
