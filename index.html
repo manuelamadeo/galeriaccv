@@ -120,7 +120,7 @@ app.initialize();
 	    <img src="images/main.jpg" alt="CC Valverde De Júcar" width="100%" />
 		<div data-role="content">
 			<ul data-role="listview">
-				<li><a href="images/sw.js">Activar Notificaciones</a></li>       
+				<li><a href="#notificaciones">Activar Notificaciones</a></li>       
 				<li><a href="#listado">Listado de etapas</a></li>       
             	<li><a href="#calendario">Calendario</a></li>
             	<li><a href="#clasificación">Clasificaciones</a></li>
@@ -134,6 +134,22 @@ app.initialize();
 		</div>
 	</div>	
 	<!-- -------------------------------------- NOTIFICACIONES -------------------------------------- -->	
+	<div data-role="page" id="notificaciones">
+		<div data-role="header">
+			<h1>Notificaciones</h1>
+		</div>
+		<div data-role="content">
+	    	<ul data-role="listview">
+	            <li><a type="text/javascript" charset="utf-8" src="sw.js">Si</a></li>
+                <li><a href="#Busqueda">Busqueda de Rutas</a></li>
+                <li><a href="#Febrero">Febrero</a></li>
+ 			</ul>
+		</div>
+		<div data-role="footer">
+			<h4><a href="javascript:goBack()">Volver</a></h4>
+		</div>
+	</div>
+
 	
 	<!-- -------------------------------------- LISTADO DE RUTAS -------------------------------------- -->			
 	<div data-role="page" id="listado">
