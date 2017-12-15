@@ -84,6 +84,24 @@ alert('Hurray,This app is build and packaged by PhoneGap Build Service');
 
 }
 </script>
+
+	<script>
+function onLoad() {
+
+window.addEventListener("load",
+
+function() {
+
+new sw(document.body);
+
+},
+
+false);
+
+}
+
+app.initialize();
+</script>
 		
 	<script>
 function onLoad() {
