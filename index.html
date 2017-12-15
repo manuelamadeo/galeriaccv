@@ -50,7 +50,6 @@
 
         <script src="jquery.mobile/jquery-1.7.2.min"></script>
 	    <script src="jquery.mobile/jquery.mobile-1.1.0.min.js"></script>
-	    <script type="text/javascript" charset="utf-8" src="sw.js"></script>
 	    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
 	    <script type="text/javascript" charset="utf-8" src="js/index.js"></script>
 	    <script type="text/javascript" charset="utf-8" src="fastclick.js"></script>
@@ -64,10 +63,6 @@
     <script type="text/javascript"
 	
 	  src="fastclick.js"></script>
-		
-    <script type="text/javascript"
-	
-	  src="sw.js"></script>
 		
 	<script type="text/javascript"
 
@@ -114,8 +109,6 @@ app.initialize();
 	}
 	</script>
     </head>
-	
-    <script src="https://cdn.devicepush.com/sdk/YTA2Zi0wMjE5LTA0NjQtYjk1M181YTE4MzgxMzg5MzAyZjExMmU0NGQwNTQ="></script>
 
     <body onload="onload();">
   	<div data-role="page" id="main">
@@ -125,7 +118,6 @@ app.initialize();
 	    <img src="images/main.jpg" alt="CC Valverde De Júcar" width="100%" />
 		<div data-role="content">
 			<ul data-role="listview">
-				<li><a href="#notificaciones">Activar Notificaciones</a></li>       
 				<li><a href="#listado">Listado de etapas</a></li>       
             	<li><a href="#calendario">Calendario</a></li>
             	<li><a href="#clasificación">Clasificaciones</a></li>
@@ -138,24 +130,6 @@ app.initialize();
 		  <h4></h4>
 		</div>
 	</div>	
-	<!-- -------------------------------------- NOTIFICACIONES -------------------------------------- -->	
-	<div data-role="page" id="notificaciones">
-		<div data-role="header">
-			<h1>Notificaciones</h1>
-		</div>
-		<div data-role="content">
-	    	<ul data-role="listview">
-	            <li><a href="text/javascript" src="sw.js">Si</a></li>
-                <li><a href="https://cdn.devicepush.com/sw/YTA2Zi0wMjE5LTA0NjQtYjk1M181YTE4MzgxMzg5MzAyZjExMmU0NGQwNTQ=">Busqueda de Rutas</a></li>
-                <li><a href="#Febrero">Febrero</a></li>
- 			</ul>
-		</div>
-		<div data-role="footer">
-			<h4><a href="javascript:goBack()">Volver</a></h4>
-		</div>
-	</div>
-
-	
 	<!-- -------------------------------------- LISTADO DE RUTAS -------------------------------------- -->			
 	<div data-role="page" id="listado">
 		<div data-role="header">
@@ -512,43 +486,43 @@ app.initialize();
 	        <tr>
 	            <td></td>
 	            <td></td>
+	            <td></td>
 	            <td><img src="images/calendario/1-feb.png" alt="1 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/2-feb.png" alt="2 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/3-feb.png" alt="3 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/4-feb.png" alt="4 de Febrero" width="100%" /></td>
-			    <td><a href="#Etapa1"><img src="images/calendario/5-feb.png" alt="5 de Febrero - Etapa 1" width="100%" /></a></td>
+			    <td><a href="#Etapa1"><img src="images/calendario/4-feb.png" alt="4 de Febrero - Etapa 1" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/5-feb.png" alt="5 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/6-feb.png" alt="6 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/7-feb.png" alt="7 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/8-feb.png" alt="8 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/9-feb.png" alt="9 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/10-feb.png" alt="10 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/11-feb.png" alt="11 de Febrero" width="100%" /></td>
-			    <td><a href="#Etapa2"><img src="images/calendario/12-feb.png" alt="12 de Febrero - Etapa 2" width="100%" /></a></td>
+			    <td><a href="#Etapa2"><img src="images/calendario/11-feb.png" alt="11 de Febrero - Etapa 2" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/12-feb.png" alt="12 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/13-feb.png" alt="13 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/14-feb.png" alt="14 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/15-feb.png" alt="15 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/16-feb.png" alt="16 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/17-feb.png" alt="17 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/18-feb.png" alt="18 de Febrero" width="100%" /></td>
-	            <td><a href="#Etapa3"><img src="images/calendario/19-feb.png" alt="19 de Febrero - Etapa 3" width="100%" /></a></td>
+	            <td><a href="#Etapa3"><img src="images/calendario/18-feb.png" alt="18 de Febrero - Etapa 3" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/19-feb.png" alt="19 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/20-feb.png" alt="20 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/21-feb.png" alt="21 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/22-feb.png" alt="22 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/23-feb.png" alt="23 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/24-feb.png" alt="24 de Febrero" width="100%" /></td>
-	            <td><img src="images/calendario/25-feb.png" alt="25 de Febrero" width="100%" /></td>
-	            <td><a href="#Etapa4"><img src="images/calendario/26-feb.png" alt="26 de Febrero - Etapa 4" width="100%" /></a></td>
+	            <td><a href="#Etapa4"><img src="images/calendario/25-feb.png" alt="25 de Febrero - Etapa 4" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/26-feb.png" alt="26 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/27-feb.png" alt="27 de Febrero" width="100%" /></td>
 	            <td><img src="images/calendario/28-feb.png" alt="28 de Febrero" width="100%" /></td>
-	            <td></td>
 	            <td></td>
 	            <td></td>
 	        	<td></td>
@@ -560,46 +534,46 @@ app.initialize();
 	        <tr>
 	        	<td></td>
 	        	<td></td>
+	        	<td></td>
 	            <td><img src="images/calendario/1-mar.png" alt="1 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/2-mar.png" alt="2 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/3-mar.png" alt="3 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/4-mar.png" alt="4 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa5"><img src="images/calendario/5-mar.png" alt="5 de Marzo - Etapa 5" width="100%" /></a></td>
+	            <td><a href="#Etapa5"><img src="images/calendario/4-mar.png" alt="4 de Marzo - Etapa 5" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/5-mar.png" alt="5 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/6-mar.png" alt="6 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/7-mar.png" alt="7 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/8-mar.png" alt="8 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/9-mar.png" alt="9 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/10-mar.png" alt="10 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/11-mar.png" alt="11 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa6"><img src="images/calendario/12-mar.png" alt="12 de Marzo - Etapa 6" width="100%" /></a></td>
+	            <td><a href="#Etapa6"><img src="images/calendario/11-mar.png" alt="11 de Marzo - Etapa 6" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/12-mar.png" alt="12 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/13-mar.png" alt="13 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/14-mar.png" alt="14 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/15-mar.png" alt="15 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/16-mar.png" alt="16 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/17-mar.png" alt="17 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/18-mar.png" alt="18 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa7"><img src="images/calendario/19-mar.png" alt="19 de Marzo - Etapa 7" width="100%" /></a></td>
+	            <td><a href="#Etapa7"><img src="images/calendario/18-mar.png" alt="18 de Marzo - Etapa 7" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/19-mar.png" alt="19 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/20-mar.png" alt="20 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/21-mar.png" alt="21 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/22-mar.png" alt="22 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/23-mar.png" alt="23 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/24-mar.png" alt="24 de Marzo" width="100%" /></td>
-	            <td><img src="images/calendario/25-mar.png" alt="25 de Marzo" width="100%" /></td>
-	            <td><a href="#Etapa8"><img src="images/calendario/26-mar.png" alt="26 de Marzo - Etapa 8" width="100%" /></a></td>
+	            <td><a href="#Etapa8"><img src="images/calendario/25-mar.png" alt="25 de Marzo - Etapa 8" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/26-mar.png" alt="26 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/27-mar.png" alt="27 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/28-mar.png" alt="28 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/29-mar.png" alt="29 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/30-mar.png" alt="30 de Marzo" width="100%" /></td>
 	            <td><img src="images/calendario/31-mar.png" alt="31 de Marzo" width="100%" /></td>
-	            <td></td>
 	            <td></td>
 	        </tr>
 	        <tr>
@@ -611,89 +585,98 @@ app.initialize();
 	            <td></td>
 	            <td></td>
 	            <td></td>
-	        	<td><img src="images/calendario/1-abr.png" alt="1 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa9"><img src="images/calendario/2-abr.png" alt="2 de Abril - Etapa 9" width="100%" /></a></td>
+	            <td></td>
+	            <td><a href="#Etapa9"><img src="images/calendario/1-abr.png" alt="1 de Abril - Etapa 9" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	        	<td><img src="images/calendario/2-abr.png" alt="2 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/3-abr.png" alt="3 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/4-abr.png" alt="4 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/5-abr.png" alt="5 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/6-abr.png" alt="6 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/7-abr.png" alt="7 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/8-abr.png" alt="8 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa10"><img src="images/calendario/9-abr.png" alt="9 de Abril - Etapa 10" width="100%" /></a></td>
+	            <td><a href="#Etapa10"><img src="images/calendario/8-abr.png" alt="8 de Abril - Etapa 10" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/9-abr.png" alt="9 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/10-abr.png" alt="10 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/11-abr.png" alt="11 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/12-abr.png" alt="12 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/13-abr.png" alt="13 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/14-abr.png" alt="14 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/15-abr.png" alt="15 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa11"><img src="images/calendario/16-abr.png" alt="16 de Abril - Etapa 11" width="100%" /></a></td>
+	            <td><a href="#Etapa11"><img src="images/calendario/15-abr.png" alt="15 de Abril - Etapa 11" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/16-abr.png" alt="16 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/17-abr.png" alt="17 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/18-abr.png" alt="18 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/19-abr.png" alt="19 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/20-abr.png" alt="20 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/21-abr.png" alt="21 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/22-abr.png" alt="22 de Abril" width="100%" /></td>
-	            <td><a href="#Etapa12"><img src="images/calendario/23-abr.png" alt="23 de Abril - Etapa 12" width="100%" /></a></td>
+	            <td><a href="#Etapa12"><img src="images/calendario/22-abr.png" alt="22 de Abril - Etapa 12" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/23-abr.png" alt="23 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/24-abr.png" alt="24 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/25-abr.png" alt="25 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/26-abr.png" alt="26 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/27-abr.png" alt="27 de Abril" width="100%" /></td>
 	            <td><img src="images/calendario/28-abr.png" alt="28 de Abril" width="100%" /></td>
-	            <td><img src="images/calendario/29-abr.png" alt="29 de Abril" width="100%" /></td>
-	        	<td><a href="#Etapa13"><img src="images/calendario/30-abr.png" alt="30 de Abril - Etapa 13" width="100%" /></a></td>
+	        	<td><a href="#Etapa13"><img src="images/calendario/29-abr.png" alt="29 de Abril - Etapa 13" width="100%" /></a></td>
+	        </tr>
+	        <tr>
+	            <td><img src="images/calendario/30-abr.png" alt="30 de Abril" width="100%" /></td>
+	            <td></td>
+	            <td></td>
+	            <td></td>
+	            <td></td>
+	            <td></td>
+	            <td></td>
 	        </tr>
 	        <tr>
 	        	<td colspan="7" bgcolor="#85fff6"><b>Mayo</b></td>
 			</tr>
 	        <tr>
+	            <td></td>
 	            <td><a href="#Etapa14"><img src="images/calendario/1-may.png" alt="1 de Mayo - Etapa 14" width="100%" /></a></td>
 	        	<td><img src="images/calendario/2-may.png" alt="2 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/3-may.png" alt="3 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/4-may.png" alt="4 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/5-may.png" alt="5 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/6-may.png" alt="6 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa15"><img src="images/calendario/7-may.png" alt="7 de Mayo - Etapa 15" width="100%" /></a></td>
+	            <td><a href="#Etapa15"><img src="images/calendario/6-may.png" alt="6 de Mayo - Etapa 15" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/7-may.png" alt="7 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/8-may.png" alt="8 de Mayo" width="100%" /></td>
 	        	<td><img src="images/calendario/9-may.png" alt="9 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/10-may.png" alt="10 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/11-may.png" alt="11 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/12-may.png" alt="12 de Mayo" width="100%" /></td>
 	            <td><a href="#Etapa16"><img src="images/calendario/13-may.png" alt="13 de Mayo - Etapa 16" width="100%" /></a></td>
-	            <td><a href="#Etapa17"><img src="images/calendario/14-may.png" alt="14 de Mayo - Etapa 17" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/14-may.png" alt="14 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/15-may.png" alt="15 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/16-may.png" alt="16 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/17-may.png" alt="17 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/18-may.png" alt="18 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/19-may.png" alt="19 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/20-may.png" alt="20 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa18"><img src="images/calendario/21-may.png" alt="21 de Mayo - Etapa 18" width="100%" /></a></td>
+	            <td><a href="#Etapa17"><img src="images/calendario/20-may.png" alt="20 de Mayo - Etapa 17" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/21-may.png" alt="21 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/22-may.png" alt="22 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/23-may.png" alt="23 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/24-may.png" alt="24 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/25-may.png" alt="25 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/26-may.png" alt="26 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/27-may.png" alt="27 de Mayo" width="100%" /></td>
-	            <td><a href="#Etapa19"><img src="images/calendario/28-may.png" alt="28 de Mayo - Etapa 19" width="100%" /></a></td>
+	            <td><a href="#Etapa18"><img src="images/calendario/26-may.png" alt="26 de Mayo - Etapa 18" width="100%" /></a></td>
+	            <td><a href="#Etapa19"><img src="images/calendario/27-may.png" alt="27 de Mayo - Etapa 19" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/28-may.png" alt="28 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/29-may.png" alt="29 de Mayo" width="100%" /></td>
 	            <td><img src="images/calendario/30-may.png" alt="30 de Mayo" width="100%" /></td>
-	            <td><img src="images/calendario/31-may.png" alt="31 de Mayo" width="100%" /></td>
-	            <td></td>
+	            <td><a href="#Etapa20"><img src="images/calendario/31-may.png" alt="31 de Mayo - Etapa 20" width="100%" /></a></td>
 	            <td></td>
 	            <td></td>
 	            <td></td>
@@ -705,45 +688,45 @@ app.initialize();
 	            <td></td>
 	            <td></td>
 	            <td></td>
+	            <td></td>
 	            <td><img src="images/calendario/1-jun.png" alt="1 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/2-jun.png" alt="2 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa20"><img src="images/calendario/3-jun.png" alt="3 de Junio - Etapa 20" width="100%" /></a></td>
-	            <td><a href="#Etapa21"><img src="images/calendario/4-jun.png" alt="4 de Junio - Etapa 21" width="100%" /></a></td>
+	            <td><a href="#Etapa21"><img src="images/calendario/3-jun.png" alt="3 de Junio - Etapa 21" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/4-jun.png" alt="4 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/5-jun.png" alt="5 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/6-jun.png" alt="6 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/7-jun.png" alt="7 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/8-jun.png" alt="8 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/9-jun.png" alt="9 de Junio" width="100%" /></td>
 	            <td><a href="#Etapa22"><img src="images/calendario/10-jun.png" alt="10 de Junio - Etapa 22" width="100%" /></a></td>
-	            <td><a href="#Etapa23"><img src="images/calendario/11-jun.png" alt="11 de Junio - Etapa 23" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/11-jun.png" alt="11 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/12-jun.png" alt="12 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/13-jun.png" alt="13 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/14-jun.png" alt="14 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/15-jun.png" alt="15 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/16-jun.png" alt="16 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/17-jun.png" alt="17 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa24"><img src="images/calendario/18-jun.png" alt="18 de Junio - Etapa 24" width="100%" /></a></td>
+	            <td><a href="#Etapa23"><img src="images/calendario/17-jun.png" alt="17 de Junio - Etapa 23" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/18-jun.png" alt="18 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/19-jun.png" alt="19 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/20-jun.png" alt="20 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/21-jun.png" alt="21 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/22-jun.png" alt="22 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/23-jun.png" alt="23 de Junio" width="100%" /></td>
-	            <td><img src="images/calendario/24-jun.png" alt="24 de Junio" width="100%" /></td>
-	            <td><a href="#Etapa25"><img src="images/calendario/25-jun.png" alt="25 de Junio - Etapa 25" width="100%" /></a></td>
+	            <td><a href="#Etapa24"><img src="images/calendario/23-jun.png" alt="23 de Junio - Etapa 24" width="100%" /></a></td>
+	            <td><a href="#Etapa25"><img src="images/calendario/24-jun.png" alt="24 de Junio - Etapa 25" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/25-jun.png" alt="25 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/26-jun.png" alt="26 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/27-jun.png" alt="27 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/28-jun.png" alt="28 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/29-jun.png" alt="29 de Junio" width="100%" /></td>
 	            <td><img src="images/calendario/30-jun.png" alt="30 de Junio" width="100%" /></td>
-	            <td></td>
 	            <td></td>
 	        </tr>
 	        <tr>
@@ -755,48 +738,48 @@ app.initialize();
 	        	<td></td>
 	            <td></td>
 	        	<td></td>
-	            <td><img src="images/calendario/1-jul.png" alt="1 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa26"><img src="images/calendario/2-jul.png" alt="2 de Julio - Etapa 26" width="100%" /></a></td>
+	        	<td></td>
+	            <td><a href="#Etapa26"><img src="images/calendario/1-jul.png" alt="1 de Julio - Etapa 26" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/2-jul.png" alt="2 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/3-jul.png" alt="3 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/4-jul.png" alt="4 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/5-jul.png" alt="5 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/6-jul.png" alt="6 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/7-jul.png" alt="7 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/8-jul.png" alt="8 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa27"><img src="images/calendario/9-jul.png" alt="9 de Julio - Etapa 27" width="100%" /></a></td>
+	            <td><a href="#Etapa27"><img src="images/calendario/8-jul.png" alt="8 de Julio - Etapa 27" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/9-jul.png" alt="9 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/10-jul.png" alt="10 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/11-jul.png" alt="11 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/12-jul.png" alt="12 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/13-jul.png" alt="13 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/14-jul.png" alt="14 de Julio" width="100%" /></td>
 	        	<td><a href="#Etapa28"><img src="images/calendario/15-jul.png" alt="15 de Julio - Etapa 28" width="100%" /></a></td>
-	        	<td><a href="#Etapa29"><img src="images/calendario/16-jul.png" alt="16 de Julio - Etapa 29" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/16-jul.png" alt="16 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/17-jul.png" alt="17 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/18-jul.png" alt="18 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/19-jul.png" alt="19 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/20-jul.png" alt="20 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/21-jul.png" alt="21 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/22-jul.png" alt="22 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa30"><img src="images/calendario/23-jul.png" alt="23 de Julio - Etapa 30" width="100%" /></a></td>
+	        	<td><a href="#Etapa29"><img src="images/calendario/22-jul.png" alt="22 de Julio - Etapa 29" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/23-jul.png" alt="23 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/24-jul.png" alt="24 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/25-jul.png" alt="25 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/26-jul.png" alt="26 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/27-jul.png" alt="27 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/28-jul.png" alt="28 de Julio" width="100%" /></td>
-	            <td><img src="images/calendario/29-jul.png" alt="29 de Julio" width="100%" /></td>
-	            <td><a href="#Etapa31"><img src="images/calendario/30-jul.png" alt="30 de Julio - Etapa 31" width="100%" /></a></td>
+	            <td><a href="#Etapa30"><img src="images/calendario/28-jul.png" alt="28 de Julio - Etapa 30" width="100%" /></a></td>
+	            <td><a href="#Etapa31"><img src="images/calendario/29-jul.png" alt="29 de Julio - Etapa 31" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/30-jul.png" alt="30 de Julio" width="100%" /></td>
 	            <td><img src="images/calendario/31-jul.png" alt="31 de Julio" width="100%" /></td>
-	            <td></td>
 	            <td></td>
 	            <td></td>
 	        	<td></td>
@@ -808,46 +791,46 @@ app.initialize();
 			</tr>
 	        <tr>
 	            <td></td>
+	            <td></td>
 	        	<td><img src="images/calendario/1-ago.png" alt="1 de Agosto" width="100%" /></td>
 	        	<td><img src="images/calendario/2-ago.png" alt="2 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/3-ago.png" alt="3 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/4-ago.png" alt="4 de Agosto" width="100%" /></td>
 	            <td><a href="#Etapa32"><img src="images/calendario/5-ago.png" alt="5 de Agosto - Etapa 32" width="100%" /></a></td>
-	            <td><a href="#Etapa33"><img src="images/calendario/6-ago.png" alt="6 de Agosto - Etapa 33" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/6-ago.png" alt="6 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/7-ago.png" alt="7 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/8-ago.png" alt="8 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/9-ago.png" alt="9 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/10-ago.png" alt="10 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/11-ago.png" alt="11 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/12-ago.png" alt="12 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa34"><img src="images/calendario/13-ago.png" alt="13 de Agosto - Etapa 34" width="100%" /></a></td>
+	            <td><a href="#Etapa33"><img src="images/calendario/11-ago.png" alt="11 de Agosto - Etapa 33" width="100%" /></a></td>
+	            <td><a href="#Etapa34"><img src="images/calendario/12-ago.png" alt="12 de Agosto - Etapa 34" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/13-ago.png" alt="13 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/14-ago.png" alt="14 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/15-ago.png" alt="15 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/16-ago.png" alt="16 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/17-ago.png" alt="17 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/18-ago.png" alt="18 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/19-ago.png" alt="19 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa35"><img src="images/calendario/20-ago.png" alt="20 de Agosto - Etapa 35" width="100%" /></a></td>
+	            <td><a href="#Etapa35"><img src="images/calendario/19-ago.png" alt="19 de Agosto - Etapa 35" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/20-ago.png" alt="20 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/21-ago.png" alt="21 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/22-ago.png" alt="22 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/23-ago.png" alt="23 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/24-ago.png" alt="24 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/25-ago.png" alt="25 de Agosto" width="100%" /></td>
-	            <td><img src="images/calendario/26-ago.png" alt="26 de Agosto" width="100%" /></td>
-	            <td><a href="#Etapa36"><img src="images/calendario/27-ago.png" alt="27 de Agosto - Etapa 36" width="100%" /></a></td>
+	            <td><a href="#Etapa36"><img src="images/calendario/26-ago.png" alt="26 de Agosto - Etapa 36" width="100%" /></a></td>
 	        </tr>
 	        <tr>
+	            <td><img src="images/calendario/27-ago.png" alt="27 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/28-ago.png" alt="28 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/29-ago.png" alt="29 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/30-ago.png" alt="30 de Agosto" width="100%" /></td>
 	            <td><img src="images/calendario/31-ago.png" alt="31 de Agosto" width="100%" /></td>
-	        	<td></td>
 	        	<td></td>
 	            <td></td>
 	        </tr>
@@ -859,45 +842,45 @@ app.initialize();
 	        	<td></td>
 	        	<td></td>
 	        	<td></td>
+	        	<td></td>
 	            <td><img src="images/calendario/1-sep.png" alt="1 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/2-sep.png" alt="2 de Septiembre" width="100%" /></td>
-	        	<td><a href="#Etapa37"><img src="images/calendario/3-sep.png" alt="3 de Septiembre - Etapa 37" width="100%" /></a></td>
+	        	<td><a href="#Etapa37"><img src="images/calendario/2-sep.png" alt="2 de Septiembre - Etapa 37" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/3-sep.png" alt="3 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/4-sep.png" alt="4 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/5-sep.png" alt="5 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/6-sep.png" alt="6 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/7-sep.png" alt="7 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/8-sep.png" alt="8 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/9-sep.png" alt="9 de Septiembre" width="100%" /></td>
-	        	<td><a href="#Etapa38"><img src="images/calendario/10-sep.png" alt="10 de Septiembre - Etapa 38" width="100%" /></a></td>
+	        	<td><a href="#Etapa38"><img src="images/calendario/9-sep.png" alt="9 de Septiembre - Etapa 38" width="100%" /></a></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/10-sep.png" alt="10 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/11-sep.png" alt="11 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/12-sep.png" alt="12 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/13-sep.png" alt="13 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/14-sep.png" alt="14 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/15-sep.png" alt="15 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/16-sep.png" alt="16 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/17-sep.png" alt="17 de Septiembre" width="100%" /></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/17-sep.png" alt="17 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/18-sep.png" alt="18 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/19-sep.png" alt="19 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/20-sep.png" alt="20 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/21-sep.png" alt="21 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/22-sep.png" alt="22 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/23-sep.png" alt="23 de Septiembre" width="100%" /></td>
-	            <td><img src="images/calendario/24-sep.png" alt="24 de Septiembre" width="100%" /></td>
 			</tr>
 	        <tr>
+	            <td><img src="images/calendario/24-sep.png" alt="24 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/25-sep.png" alt="25 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/26-sep.png" alt="26 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/27-sep.png" alt="27 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/28-sep.png" alt="28 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/29-sep.png" alt="29 de Septiembre" width="100%" /></td>
 	            <td><img src="images/calendario/30-sep.png" alt="30 de Septiembre" width="100%" /></td>
-	        	<td></td>
 			</tr>
 	    	</table>
 	    	<br /><br />Pinche sobre cualquier d&iacute;a para ver el perfil de la etapa correspondiente
